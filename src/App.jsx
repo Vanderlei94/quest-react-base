@@ -1,18 +1,18 @@
-import ParagraphFormatter from './components/textFormatter/textFormatter'
-import Button from './components/button/button'
+import StyledText from './components/StyledText'
+import AlertButton from './components/AlertButton'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <Button label='Baixar CV' />
-      <Button />
-      <Button label=''/>
+      <AlertButton label='Baixar CV' />
+      <AlertButton />
+      <AlertButton label=''/>
 
-      <ParagraphFormatter />
-      <ParagraphFormatter text='Texto personalizado sem uppercase' color='darkgreen' toUpperCase={false}/>
-      <ParagraphFormatter text='Texto personalizado com uppercase' color='#FF007F' />
+      <StyledText />
+      <StyledText text='Texto personalizado sem uppercase' color='darkgreen' toUpperCase={false}/>
+      <StyledText text='Texto personalizado com uppercase' color='#FF007F' />
     </>
   )
 }
